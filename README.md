@@ -82,9 +82,11 @@ int decryptedMessage = decrypt(ciphertext, d, n);
 printf("Decrypted message: %d\n", decryptedMessage);
 return 0;
 }
+
 ```
 ## OUTPUT:
-![Screenshot 2024-03-05 113517](https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/b96f8704-db74-4fb0-835d-078d58644625)
+![RSA](https://github.com/rifnasherine/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393279/68055026-0cf8-40d9-a10e-fc98c72114e9)
+
 
 
 ## RESULT :
@@ -163,10 +165,11 @@ printf("Secret key for the Alice is : %lld\n", ka);
 printf("Secret Key for the Bob is : %lld\n", kb);
 return 0;
 }
+
 ```
 ## OUTPUT:
 
-<img width="342" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/a3f5b0fa-ef81-4215-9521-2a16c87cef68">
+![deffie](https://github.com/rifnasherine/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393279/d8de2dfc-1415-44c6-9a9c-8d76c4446e2c)
 
 
 ## RESULT: 
@@ -201,6 +204,7 @@ same process for the remaining plain text characters.
 
 ```
 from cryptography.fernet import Fernet
+print("Enter the string: ")
 message = input()
 key = Fernet.generate_key()
 fernet = Fernet(key)
@@ -211,10 +215,12 @@ print("encrypted string: ", encMessage)
 decMessage = fernet.decrypt(encMessage).decode()
  
 print("decrypted string: ", decMessage)
+
 ```
 ## OUTPUT:
 
-<img width="756" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/23e74c08-7cea-4381-b9fe-97e247b17470">
+![DES (2)](https://github.com/rifnasherine/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393279/b522f219-d60d-446f-9977-8ef52f7eea77)
+
 
 ## RESULT:
 
